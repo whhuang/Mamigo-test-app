@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+    <script language="Javascript" type="text/javascript" src="js/jquery-1.4.1.js"></script>
+
+    <script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+
+    <script language="Javascript" type="text/javascript" src="js/misc.js"></script>
+
+    <script type="text/javascript" language="Javascript">
+function onDoneCounter()
+{
+var userAgent = window.navigator.userAgent.toLowerCase(),
+    iphone = /iphone|ipod|ipad/.test( userAgent ),
+    ipad = /ipad/.test( userAgent );
+if (iphone)
+    window.location.href="index.iPhone.html";
+else if (ipad)
+    window.location.href="index.iPad.html";
+else
+    window.location.href="index.pc.html";
+}
+onDoneCounter();
+</script>
+</head>
+<body>
+</body>
+</html>

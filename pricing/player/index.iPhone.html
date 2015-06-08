@@ -1,0 +1,11 @@
+<html>
+<body>
+   <video id="id_player" x-webkit-airplay="allow" controls alt="mAmigo GameView" width="854" height="480" poster="/img/logo252x72.jpg">
+    	<p>Sorry your browser does not support the HTML 5 video element</p> 
+   </video> 
+   <script>
+		var qryString = window.location.href.split('?')[1];
+		document.getElementById('id_player').setAttribute("src","http://localhost:1935/live/_definst_/myStream2.sdp/playlist.m3u8?"+qryString);
+   </script>
+</body>
+</html>

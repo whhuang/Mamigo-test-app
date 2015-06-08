@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+    <script language="Javascript" type="text/javascript" src="js/jquery-1.4.1.js"></script>
+
+    <script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+
+    <script language="Javascript" type="text/javascript" src="js/misc.js"></script>
+
+    <script type="text/javascript" language="Javascript">
+function onDoneCounter()
+{
+var userAgent = window.navigator.userAgent.toLowerCase(),
+    iphone = /iphone|ipod|ipad/.test( userAgent ),
+    ipad = /ipad/.test( userAgent );
+	var qs = window.location.href.split('?')[1];
+if (iphone)
+    window.location.href="index.iPhone.html?"+qs;
+else if (ipad)
+    window.location.href="index.iPad.html?"+qs;
+else
+    window.location.href="index.pc.html?"+qs;
+}
+var now = new Date();
+var now_utc = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+//following is UTC
+var game_year=2014;
+var game_month=10; //Oct
+var game_day=21;
+var game_hour=17;
+var game_min=45;
+
+var game_utc = Date.UTC(game_year,game_month-1, game_day, game_hour, game_min);
+
+if ((now_utc - game_utc) > 0) onDoneCounter();
+    </script>
+
+    <title>mAmigo GameView</title>
+    <link rel="Stylesheet" type="text/css" href="style/main.css"></link>
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/css/layout5_setup.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/css/layout5_text.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <meta name="google" value="notranslate">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css" media="screen">
+        html, body
+        {
+            height: 100%;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        object:focus
+        {
+            outline: none;
+        }
+        #flashContent
+        {
+            display: none;
+        }
+        .main-content 
+        {
+        	display:inline; /*Fix IE floating margin bug*/
+        	float:none;
+        	overflow:visible !important /*Firefox*/;
+	        overflow:hidden /*IE6*/;
+	        margin-top: 0;
+	        margin-right: 0;
+	        margin-bottom: 0;
+	        margin-left: 20px;
+        }
+}
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="history/history.css" />
+
+    <script type="text/javascript" src="history/history.js"></script>
+
+</head>
+<body>
+    <div id="container" class="page-container">
+        <div class="header">
+            <!-- A.1 HEADER TOP -->
+            <div class="header-top">
+                <!-- Sitelogo and sitename -->
+                <!-- Navigation Level 0 -->
+                <!-- Navigation Level 1 -->
+                <div class="nav1">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Gameview.html">GameView</a></li>
+                        <li><a href="/about_contact.html" title="Get in touch with us">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+                <h1>Janet Erskine Stuart Centenary Celebration</h1>
+            <h2 class="subtitle"> Live from Cor Unum. Coming soon... stay tuned for updates.</h2>
+            <!-- Countdown dashboard start -->
+            <div id="countdown_dashboard">
+            <!--
+                <div class="dash weeks_dash">
+                    <span class="dash_title">weeks</span>
+                    <div class="digit">
+                        0</div>
+                    <div class="digit">
+                        0</div>
+                </div>
+        -->                
+                <div class="dash days_dash">
+                    <span class="dash_title">days</span>
+                    <div class="digit">
+                        0</div>
+                    <div class="digit">
+                        0</div>
+                </div>
+                <div class="dash hours_dash">
+                    <span class="dash_title">hours</span>
+                    <div class="digit">
+                        0</div>
+                    <div class="digit">
+                        0</div>
+                </div>
+                <div class="dash minutes_dash">
+                    <span class="dash_title">minutes</span>
+                    <div class="digit">
+                        0</div>
+                    <div class="digit">
+                        0</div>
+                </div>
+                <div class="dash seconds_dash">
+                    <span class="dash_title">seconds</span>
+                    <div class="digit">
+                        0</div>
+                    <div class="digit">
+                        0</div>
+                </div>
+            </div>
+            <!-- Countdown dashboard end -->
+
+            <script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		game_day,
+						'month': 	game_month,
+						'year': 	game_year,
+						'hour': 	game_hour,
+						'min': 		game_min,
+						'sec': 		0,
+                        'utc':      true
+                    },
+					omitWeeks:true,
+					onComplete: function() { onDoneCounter();}
+				});
+			});
+		</script>
+	
+
+		<br />
+		<br />
+		<div>
+		<h2 class="subtitle">Tune in on Oct 21st at 2:00 pm EST for the live broadcast</h2><br/>
+		<img src="images/JESC100Y.jpg" width="560"/>
+		</div>
+
+            <div class="">
+                <p align="right">
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"
+                        data-via="stuart_mamigo">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    Copyright &copy; 2011-2014 mAmigo | All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

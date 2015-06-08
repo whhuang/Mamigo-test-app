@@ -1,0 +1,6 @@
+$team_sched=array (
+  '2011-10-22 14:00:00 EDT',
+  '2012-11-05 10:00:00 EDT',
+  );
+
+$sched_url='http://www.tcnjathletics.com/index.aspx?tab=football&path=fball';

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+    <!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
+    <head>
+<SCRIPT>
+var userAgent = window.navigator.userAgent.toLowerCase(),
+    iphone = /iphone|ipod/.test( userAgent ),
+    ipad = /ipad/.test( userAgent );
+if (iphone)
+  document.write('<META HTTP-EQUIV="REFRESH" CONTENT="1;URL=index.iPhone.html">');
+else if (ipad)
+  document.write('<META HTTP-EQUIV="REFRESH" CONTENT="1;URL=index.iPad.html">');
+else
+  document.write('<META HTTP-EQUIV="REFRESH" CONTENT="1;URL=index.pc.html">');
+</SCRIPT>
+        <title>mAmigo GameView</title>
+    </head>
+<body/>
+</html>

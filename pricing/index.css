@@ -1,0 +1,75 @@
+.box {
+	font-family: Arial, sans-serif;
+	background-color: #F1F1F1;
+	border:0;
+	width:340px;
+	webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	margin: 0 auto 25px;
+	text-align:center;
+	padding:10px 0px;
+}
+
+.box img{
+	padding: 10px 0px;
+}
+
+.box a{
+	color: #427fed;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.heading {
+	text-align:center;
+	padding:10px;
+	font-family: 'Open Sans', arial;
+	color: #555;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.circle-image{
+	width:100px;
+	height:100px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.welcome{
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0 0;
+	min-height: 1em;
+	padding-bottom:10px;
+}
+
+.oauthemail{
+	font-size: 18px;
+}
+
+.logout{
+	position:relative;
+	left:25%;
+	width:150px;
+	font-size: 24px;
+	font-weight:bolder;
+	text-align: center;
+	padding: 5px;
+	margin: 20px 5px 0px 5px;
+	border-top: #CCCCCC 1px solid;
+	border-radius:50px;
+	color:white;
+	background:#318AF5;
+}
+
+/*input[type="submit"] {
+    background: url(images/proceed_pay.png);
+	background-size:260px 50px;
+    width: 260px; /* width of image */
+    height: 50px; /* height of image */
+    border: 0;
+	outline:none;
+	cursor:pointer;
+}*/
